@@ -13,8 +13,8 @@
 		C317B9EE1B83A33100FFE829 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C317B9ED1B83A33100FFE829 /* Images.xcassets */; };
 		C317B9F11B83A33100FFE829 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C317B9EF1B83A33100FFE829 /* LaunchScreen.xib */; };
 		C317B9FD1B83A33100FFE829 /* CarzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317B9FC1B83A33100FFE829 /* CarzTests.swift */; };
-		C317BA101B83A6A900FFE829 /* CarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C317BA0E1B83A6A100FFE829 /* CarKit.framework */; };
-		C317BA111B83A6A900FFE829 /* CarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C317BA0E1B83A6A100FFE829 /* CarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3CD13551C5A931B006CF7B0 /* CarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CD13531C5A9312006CF7B0 /* CarKit.framework */; };
+		C3CD13561C5A931B006CF7B0 /* CarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3CD13531C5A9312006CF7B0 /* CarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C317BA111B83A6A900FFE829 /* CarKit.framework in Embed Frameworks */,
+				C3CD13561C5A931B006CF7B0 /* CarKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +52,7 @@
 		C317B9F61B83A33100FFE829 /* CarzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C317B9FB1B83A33100FFE829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C317B9FC1B83A33100FFE829 /* CarzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarzTests.swift; sourceTree = "<group>"; };
-		C317BA0E1B83A6A100FFE829 /* CarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarKit.framework; sourceTree = "<group>"; };
+		C3CD13531C5A9312006CF7B0 /* CarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C317BA101B83A6A900FFE829 /* CarKit.framework in Frameworks */,
+				C3CD13551C5A931B006CF7B0 /* CarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 		C317BA081B83A4A300FFE829 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				C317BA0E1B83A6A100FFE829 /* CarKit.framework */,
+				C3CD13531C5A9312006CF7B0 /* CarKit.framework */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -184,7 +184,9 @@
 		C317B9D61B83A33100FFE829 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Andrew Bancroft";
 				TargetAttributes = {
 					C317B9DD1B83A33100FFE829 = {
@@ -304,6 +306,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -377,6 +380,7 @@
 				);
 				INFOPLIST_FILE = Carz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -392,6 +396,7 @@
 				);
 				INFOPLIST_FILE = Carz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -410,6 +415,7 @@
 				);
 				INFOPLIST_FILE = CarzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carz.app/Carz";
 			};
@@ -425,6 +431,7 @@
 				);
 				INFOPLIST_FILE = CarzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carz.app/Carz";
 			};
@@ -449,6 +456,7 @@
 				C317BA021B83A33100FFE829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C317BA031B83A33100FFE829 /* Build configuration list for PBXNativeTarget "CarzTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +465,7 @@
 				C317BA051B83A33100FFE829 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
