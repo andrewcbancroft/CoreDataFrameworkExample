@@ -8,4 +8,4 @@ CarKit is a Swift framework project that is intended to be used to package up an
 Carz is an iOS application that is dependent on the CarKit framework and is configured to initialize its `managedObjectModel` using the CarKit framework.
 
 # Compatibility
-Verified that this repository's code works in XCode 6.3 with Swift 1.2
+Updated for compatibility with Xcode 7 and Swift 2
