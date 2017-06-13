@@ -13,8 +13,8 @@
 		C317B9EE1B83A33100FFE829 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C317B9ED1B83A33100FFE829 /* Images.xcassets */; };
 		C317B9F11B83A33100FFE829 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C317B9EF1B83A33100FFE829 /* LaunchScreen.xib */; };
 		C317B9FD1B83A33100FFE829 /* CarzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317B9FC1B83A33100FFE829 /* CarzTests.swift */; };
-		C3CD13551C5A931B006CF7B0 /* CarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CD13531C5A9312006CF7B0 /* CarKit.framework */; };
-		C3CD13561C5A931B006CF7B0 /* CarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3CD13531C5A9312006CF7B0 /* CarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3F48E7E1EF05F5100455B21 /* CarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F48E7C1EF05F2A00455B21 /* CarKit.framework */; };
+		C3F48E7F1EF05F5100455B21 /* CarKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3F48E7C1EF05F2A00455B21 /* CarKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C3CD13561C5A931B006CF7B0 /* CarKit.framework in Embed Frameworks */,
+				C3F48E7F1EF05F5100455B21 /* CarKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +52,7 @@
 		C317B9F61B83A33100FFE829 /* CarzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C317B9FB1B83A33100FFE829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C317B9FC1B83A33100FFE829 /* CarzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarzTests.swift; sourceTree = "<group>"; };
-		C3CD13531C5A9312006CF7B0 /* CarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarKit.framework; sourceTree = "<group>"; };
+		C3F48E7C1EF05F2A00455B21 /* CarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3CD13551C5A931B006CF7B0 /* CarKit.framework in Frameworks */,
+				C3F48E7E1EF05F5100455B21 /* CarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 		C317BA081B83A4A300FFE829 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				C3CD13531C5A9312006CF7B0 /* CarKit.framework */,
+				C3F48E7C1EF05F2A00455B21 /* CarKit.framework */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -186,14 +186,16 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Andrew Bancroft";
 				TargetAttributes = {
 					C317B9DD1B83A33100FFE829 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 					};
 					C317B9F51B83A33100FFE829 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 						TestTargetID = C317B9DD1B83A33100FFE829;
 					};
 				};
@@ -298,8 +300,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -344,8 +348,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -364,6 +370,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -382,6 +389,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -398,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -417,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carz.app/Carz";
 			};
 			name = Debug;
@@ -433,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcbancroft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carz.app/Carz";
 			};
 			name = Release;
